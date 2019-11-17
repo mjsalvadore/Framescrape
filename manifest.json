@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Framescrape",
+  "description": "Data scraping tool for Youtube videos",
+  "version": "0.0.2",
+  "icons": { "128": "128_god.png" },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch?v=*"],
+      "js": ["jquery-3.4.1.js", "inject.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "god.png",
+    "default_popup": "popup.html"
+    
+  },
+  "permissions": ["activeTab"]
+
+
+  
+}
